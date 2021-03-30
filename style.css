@@ -1,0 +1,22 @@
+ /* css selector */
+ /* div is the selector */
+ /* color is property */
+ /* Red color is the value */
+ /* to access username-> we */
+ div{        
+    color: red;
+}
+
+#username{
+    font-size: 30px;
+    color:green;
+}
+
+.paragraph{
+    border:30px solid yellow;
+} 
+div{
+    margin:15px solid;
+    padding: 10px;
+    border: 8px solid;
+}  
