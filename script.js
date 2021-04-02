@@ -1,24 +1,16 @@
-// Object and JSON Operations
-let object={
-    name:'salesforce',
-    age:65,
-    dob:"20/12/1990"
-}
-// 1.object.keys()
-// to extract all the keys means the property ie. name,age etc
-// displays values in the array format
-console.log(Object.keys(object))
+//query Selector
+// it select the first element from the document(html is the document)
+let element=document.querySelector('div')
+console.log(element)
 
-// 2.object.values()
-// it will give values whatever stored inside the property 
-// displays values in the array format
-console.log(Object.values(object))
 
-// 3.JSON.stringify()
-// it converts the above object into string
-let str=JSON.stringify(object)
-console.log(JSON.stringify(object))
-
-// 4. JSON.parse()
-// it converts the string into an object
-console.log(JSON.parse(str))
+// 2.queryselectorall()
+// static node list
+// if we want to looping through array 
+// then we use forEach()
+// convert nodelist into array
+let elementall=document.querySelectorAll('div')
+console.log(elementall)
+Array.from(elementall).forEach(function(item){
+    return item.style.color="green"
+})
